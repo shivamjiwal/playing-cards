@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    background-color:#bb92b3;
+    display:flex;
+    justify-content: center;
+    padding-top:195px;
+}
+
+#playing-cards{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width:80vw;
+}
+
+.card{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    gap:20px;
+    width:120px;
+    border:1px solid black;
+    transform:scale(2);
+    background-color:white;
+}
+
+/*.card:hover{
+    transform:scale(2.1);
+    transition:0.3s;
+    box-shadow: rgba(0, 4, 8,0.3) 0 4px 8px;
+}*/
+
+.card:nth-child(3){
+    color:red;
+    font-weight: bold;
+}
+
+.card:nth-child(5){
+    color:red;
+    font-weight: bold;
+}
+
+.left{
+    display:flex;
+    flex-direction: column;
+    align-self:  flex-start;
+    padding:2px;
+}
+
+.right{
+    display:flex;
+    flex-direction: column;
+    align-self: flex-end;
+    padding:2px;
+}
+
+.middle{
+    display:flex;
+    flex-direction:column;
+    align-self: center;
+    transform:scale(2);
+}
+
+.reverse{
+    transform: rotate(180deg);
+}
+
+.midOfMiddle{
+    margin:0 0 0 5px;
+}
